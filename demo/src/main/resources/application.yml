@@ -1,0 +1,24 @@
+# ����Դ����
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+      url: jdbc:mysql://114.116.99.162:3306/gaga?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      username: root
+      password: Lc92324!
+#      url: jdbc:mysql://192.168.11.188:3306/gaga?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+#      username: root
+#      password: 3EJExYbsG#*QHpqjHm
+  thymeleaf:
+    prefix: classpath:/templates/
+  mvc:
+    static-path-pattern: /static/**
+
+server:
+  port: 8080
